@@ -95,7 +95,7 @@ public class Option2Activity extends AppCompatActivity implements TextWatcher, V
                 }
                 isValidated = false;
             }
-            if ((!etPhone.getText().toString().matches("^[0]{1}[8]{1}[0-9]{8}$"))) {
+            if ((!etPhone.getText().toString().matches("^[0]{1}[0-9]{9}$"))) {
                 if (etPhone.getText().toString().length() > 10) {
                     etPhone.setError("Enter 10 Symbol");
                 } else {

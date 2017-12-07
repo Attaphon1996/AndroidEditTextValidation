@@ -90,7 +90,7 @@ public class Option3Activity extends AppCompatActivity {
         etPhone.addTextChangedListener(new TextValidator(etPwd) {
             @Override
             public void validate(TextView textView, String text) {
-                if ((!etPhone.getText().toString().matches("^[0]{1}[8]{1}[0-9]{8}$"))) {
+                if ((!etPhone.getText().toString().matches("^[0]{1}[0-9]{9}$"))) {
                     if (etPhone.getText().toString().length() > 10) {
                         etPhone.setError("Enter 10 Symbol");
                     } else {
